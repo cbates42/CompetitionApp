@@ -1,0 +1,15 @@
+C:\Users\maxus\source\repos\CompetitionApp\CompetitionApp\bin\Debug\net7.0\CompetitionApp.exe
+C:\Users\maxus\source\repos\CompetitionApp\CompetitionApp\bin\Debug\net7.0\CompetitionApp.deps.json
+C:\Users\maxus\source\repos\CompetitionApp\CompetitionApp\bin\Debug\net7.0\CompetitionApp.runtimeconfig.json
+C:\Users\maxus\source\repos\CompetitionApp\CompetitionApp\bin\Debug\net7.0\CompetitionApp.dll
+C:\Users\maxus\source\repos\CompetitionApp\CompetitionApp\bin\Debug\net7.0\CompetitionApp.pdb
+C:\Users\maxus\source\repos\CompetitionApp\CompetitionApp\obj\Debug\net7.0\CompetitionApp.csproj.AssemblyReference.cache
+C:\Users\maxus\source\repos\CompetitionApp\CompetitionApp\obj\Debug\net7.0\CompetitionApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\maxus\source\repos\CompetitionApp\CompetitionApp\obj\Debug\net7.0\CompetitionApp.AssemblyInfoInputs.cache
+C:\Users\maxus\source\repos\CompetitionApp\CompetitionApp\obj\Debug\net7.0\CompetitionApp.AssemblyInfo.cs
+C:\Users\maxus\source\repos\CompetitionApp\CompetitionApp\obj\Debug\net7.0\CompetitionApp.csproj.CoreCompileInputs.cache
+C:\Users\maxus\source\repos\CompetitionApp\CompetitionApp\obj\Debug\net7.0\CompetitionApp.dll
+C:\Users\maxus\source\repos\CompetitionApp\CompetitionApp\obj\Debug\net7.0\refint\CompetitionApp.dll
+C:\Users\maxus\source\repos\CompetitionApp\CompetitionApp\obj\Debug\net7.0\CompetitionApp.pdb
+C:\Users\maxus\source\repos\CompetitionApp\CompetitionApp\obj\Debug\net7.0\CompetitionApp.genruntimeconfig.cache
+C:\Users\maxus\source\repos\CompetitionApp\CompetitionApp\obj\Debug\net7.0\ref\CompetitionApp.dll
