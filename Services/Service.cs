@@ -1,4 +1,5 @@
-﻿using System;
+﻿// Referenced from Week13 Demo
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -22,7 +23,7 @@ namespace Services
 
         public void InsertRecord(RecordModel record)
         {
-            string query = $"Insert into dbo.Game (playerName,hp,atk)" +
+            string query = $"Insert into dbo.Player1 (playerName,hp,atk)" +
                 $"VALUES( '{record.playerName}','{record.hp}','{record.atk}')";
 
 
@@ -45,7 +46,6 @@ namespace Services
                 using (SqlCommand sqlCommand = new SqlCommand("[dbo].[ApiInsertRecord]", conn))
                 {
                     sqlCommand.CommandType = CommandType.StoredProcedure;
-                    sqlCommand.Parameters.AddWithValue("@id", record.id).Direction = ParameterDirection.Input;
                     sqlCommand.Parameters.AddWithValue("@playerName", record.playerName).Direction = ParameterDirection.Input;
                     sqlCommand.Parameters.AddWithValue("@hp", record.hp).Direction = ParameterDirection.Input;
                     sqlCommand.Parameters.AddWithValue("@atk", record.atk).Direction = ParameterDirection.Input;
@@ -78,7 +78,7 @@ namespace Services
                     while (result.Read())
                     {
                         RecordModel model = new RecordModel();
-                        model.id = (int)result["runID"];
+                        model.id = (int)result["id"];
                         model.playerName = (string)result["playerName"];
                         model.hp = (int)result["hp"];
                         model.atk = (int)result["atk"];
@@ -108,7 +108,7 @@ namespace Services
                     while (result.Read())
                     {
                         RecordModel model = new RecordModel();
-                        model.id = (int)result["runID"];
+                        model.id = (int)result["id"];
                         model.playerName = (string)result["playerName"];
                         model.hp = (int)result["hp"];
                         model.atk = (int)result["atk"];
@@ -140,7 +140,7 @@ namespace Services
                     while (result.Read())
                     {
 
-                        model.id = (int)result["runID"];
+                        model.id = (int)result["id"];
                         model.playerName = (string)result["playerName"];
                         model.atk = (int)result["atk"];
                         model.hp = (int)result["hp"];
