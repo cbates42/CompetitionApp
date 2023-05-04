@@ -5,6 +5,8 @@ using System.Linq;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
+using Services;
+using Services.Model;
 
 namespace CompetitionApp
 {
@@ -18,7 +20,7 @@ namespace CompetitionApp
         ConsoleColor enemycolor;
         public List<Item> items;
         ItemFactory factory = new ItemFactory();
-        
+        private Service service = new Service();
 
         public Game()
         {
@@ -278,6 +280,14 @@ namespace CompetitionApp
             {
                 item.Info();
             }
+
+            RecordModel record = new RecordModel();
+            record.playerName = player.name;
+            record.atk = player.atk;
+            record.hp = player.HP;
+
+            service.InsertRecord(record);
+            service.APIInsertRecord(record);
 
             Console.WriteLine("This is the end of the game! Press any key to start again.");
             Console.ReadKey();
